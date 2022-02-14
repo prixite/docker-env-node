@@ -2,6 +2,10 @@ version: "3.4"
 
 services:
   app:
-    build: .
+    build:
+      context: .
+      args:
+        - NAME
     ports:
       - "3000:3000"
+    command: "npm run serve"
