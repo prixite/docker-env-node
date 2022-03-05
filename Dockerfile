@@ -19,3 +19,5 @@ COPY code/requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 
 COPY ./code ./
+
+RUN npm run build
