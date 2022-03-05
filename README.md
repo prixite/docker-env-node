@@ -3,8 +3,8 @@
 
 ## Installation
 
-    docker-compose build --build-arg NAME=Tenyksian
+    docker-compose build
     docker-compose up
 
 
-You will see "Hi Tenyksian" when you visit localhost:3000.
+You will see "Hi Tenyksian" when you visit localhost:5000.
