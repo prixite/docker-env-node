@@ -2,12 +2,9 @@ version: "3.4"
 
 services:
   app:
-    build:
-      context: .
-      args:
-        - NAME
+    build: .
     ports:
-      - "3000:3000"
-    command: "npm run serve"
-    volumes:
-      - ./code:/opt/code
+      - "5000:5000"
+    env_file:
+      - code/.env
+    command: "flask run --host 0.0.0.0"

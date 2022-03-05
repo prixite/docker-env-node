@@ -6,7 +6,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>Hi {process.env.REACT_APP_NAME}</p>
+        <p>Hi {document.body.dataset.name}</p>
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
